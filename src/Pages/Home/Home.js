@@ -18,7 +18,7 @@ function Home() {
         </div>
         <div className="md:w-1/2 h-3/4  md:h-screen flex justify-center  md:block ">
           <img
-            src="ikke_transparant.png"
+            src="ikke_transparant.webp"
             className="md:h-screen object-cover "
           />
         </div>
