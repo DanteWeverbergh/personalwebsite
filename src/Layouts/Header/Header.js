@@ -10,7 +10,10 @@ function Header(props) {
   return (
     <>
       <div className="md:hidden fixed top-0">
-        <div className="h-12   relative w-screen ">
+        <div className="h-12   relative w-screen flex items-center bg-slate-950">
+          <div className="left-0 absolute bg-blue-950 rounded-full px-4 py-2 font-bold text-white-950 mt-5 ml-5 flex justify-center items-center text-sm">
+            {`<Dante/>`}
+          </div>
           {!mobileMenu ? (
             <MdMenu
               className="text-5xl right-0 absolute mr-5 mt-5 "
@@ -76,7 +79,7 @@ function Header(props) {
         )}
       </div>
 
-      <div className=" w-full bg-slate-950 hidden md:block">
+      <div className=" w-full bg-slate-950 hidden md:block md:fixed top-0 z-50">
         <div className="flex justify-between  text-xl py-6 ">
           <NavLink
             to={'/'}
