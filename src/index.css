@@ -7,3 +7,16 @@ body {
   color: #f0f6fc;
   /* max-width: 100%; */
 }
+
+swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.mySwiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 75%;
+}
