@@ -9,7 +9,7 @@ function Header(props) {
 
   return (
     <>
-      <div className="md:hidden fixed top-0">
+      <div className="md:hidden absolute top-0">
         <div className="h-12   relative w-screen flex items-center bg-slate-950">
           <div className="left-0 absolute bg-blue-950 rounded-full px-4 py-2 font-bold text-white-950 mt-5 ml-5 flex justify-center items-center text-sm">
             {`<Dante/>`}
@@ -79,7 +79,7 @@ function Header(props) {
         )}
       </div>
 
-      <div className=" w-full bg-slate-950 hidden md:block md:fixed top-0 z-50">
+      <div className=" w-full bg-slate-950 hidden md:block md:absolute top-0 z-50">
         <div className="flex justify-between  text-xl py-6 ">
           <NavLink
             to={'/'}
@@ -89,7 +89,7 @@ function Header(props) {
                 : 'ml-12 hover:text-blue-950'
             }
           >
-            Home
+            {'<Dante/>'}
           </NavLink>
           <div className="flex mr-36">
             <NavLink

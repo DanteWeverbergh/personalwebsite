@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 
 function ProjectCard() {
   return (
@@ -22,6 +23,7 @@ function ProjectCard() {
             <div className="bg-slate-950 px-4 py-2 rounded-lg absolute left-0 hover:bg-white-950 hover:text-slate-950">
               Read more
             </div>
+            <FaGithubSquare className="absolute  left-32  text-4xl mb-0 hover:text-slate-950" />
           </div>
         </div>
       </div>
