@@ -36,7 +36,7 @@ function Banner() {
             eraseDelay={250}
           /> */}
 
-          <div className="mx-12 mt-36 md:mt-0 md:mx-0">
+          <div className="mx-12 mt-36 md:mt-0 md:mx-0 z-20">
             <h1 className="font-bold text-2xl ">
               Hi, I'm Dante Weverbergh | software developer.
             </h1>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import About from '../Pages/About/About';
+import Dashboard from '../Pages/Admin/Dashboard';
 import Contact from '../Pages/Contact/Contact';
 import Home from '../Pages/Home/Home';
 import Projects from '../Pages/Projects/Projects';
@@ -22,6 +23,9 @@ function MainRouting() {
 
           {/* Projects */}
           <Route path="/projects" element={<Projects />} />
+
+          {/* Admin routes */}
+          <Route path="/admin" element={<Dashboard />} />
         </Routes>
       </div>
     </>
