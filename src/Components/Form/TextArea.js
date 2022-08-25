@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TextArea({ type, placeholder, value, ...rest }) {
+function TextArea({ type, placeholder, value, onChange, ...rest }) {
   return (
     <>
       <textarea
@@ -10,6 +10,7 @@ function TextArea({ type, placeholder, value, ...rest }) {
         className="bg-slate-950 px-4 py-2 rounded-lg w-full mt-6 focus:outline-none "
         {...rest}
         rows="12"
+        onChange={onChange}
       />
     </>
   );

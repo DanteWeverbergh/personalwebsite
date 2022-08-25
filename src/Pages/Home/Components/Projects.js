@@ -7,22 +7,16 @@ import SwiperCore, { EffectCards, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
-function Projects({ ref }) {
+function Projects() {
   return (
     <>
-      <div
-        className="md:flex md:justify-around h-screen hidden md:block bg-blue-950 items-center "
-        ref={ref}
-      >
+      <div className="md:flex md:justify-around h-screen hidden  bg-blue-950 items-center ">
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
       </div>
 
-      <div
-        className=" h-screen flex items-center md:hidden bg-blue-950"
-        ref={ref}
-      >
+      <div className=" h-screen flex items-center md:hidden bg-blue-950">
         <Swiper
           effect={'cards'}
           grabCursor={true}

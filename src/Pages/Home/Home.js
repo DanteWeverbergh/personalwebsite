@@ -8,15 +8,13 @@ import Contact from './Components/Contact';
 import Projects from './Components/Projects';
 
 function Home() {
-  const projects = useRef(null);
-
   return (
     <>
       <Header />
 
       <Banner />
 
-      <Projects ref={projects} />
+      <Projects />
       <About />
       <Contact />
 

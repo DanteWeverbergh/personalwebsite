@@ -5,6 +5,18 @@ import TextArea from '../../../Components/Form/TextArea';
 
 function Contact() {
   const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [subject, setSubject] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    //
+
+    e.preventDefault();
+
+    console.log('submit');
+  };
 
   return (
     <>
@@ -27,30 +39,42 @@ function Contact() {
               <h1 className="font-bold text-3xl  z-20 absolute right-0 top-0  ">
                 Get in touch.
               </h1>
-              <form className="mt-6">
+              <form className="mt-6" onSubmit={handleSubmit}>
                 <div className="flex">
                   <Input
                     type={'text'}
                     placeholder="First name"
                     value={firstName}
+                    onChange={({ target }) => setFirstName(target.value)}
                   />
                   <div className="w-12"></div>
                   <Input
                     type={'text'}
                     placeholder="Last name"
-                    value={firstName}
+                    value={lastName}
+                    onChange={({ target }) => setLastName(target.value)}
                   />
                 </div>
                 <div className="flex">
-                  <Input type={'text'} placeholder="Email" value={firstName} />
+                  <Input
+                    type={'email'}
+                    placeholder="Email"
+                    value={email}
+                    onChange={({ target }) => setEmail(target.value)}
+                  />
                   <div className="w-12"></div>
                   <Input
                     type={'text'}
                     placeholder="Subject"
-                    value={firstName}
+                    value={subject}
+                    onChange={({ target }) => setSubject(target.value)}
                   />
                 </div>
-                <TextArea placeholder={'Start typing your message...'} />
+                <TextArea
+                  placeholder={'Start typing your message...'}
+                  value={message}
+                  onChange={({ target }) => setMessage(target.value)}
+                />
 
                 <button
                   type="submit"
