@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import Input from '../../../Components/Form/Input';
 import TextArea from '../../../Components/Form/TextArea';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [firstName, setFirstName] = useState('');
@@ -10,12 +11,30 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const form = useRef();
+
   const handleSubmit = (e) => {
     //
 
     e.preventDefault();
 
-    console.log('submit');
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -39,7 +58,7 @@ function Contact() {
               <h1 className="font-bold text-3xl  z-20 absolute right-0 top-0  ">
                 Get in touch.
               </h1>
-              <form className="mt-6" onSubmit={handleSubmit}>
+              <form ref={form} className="mt-6" onSubmit={handleSubmit}>
                 <div className="flex">
                   <Input
                     type={'text'}
