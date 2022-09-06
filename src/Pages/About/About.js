@@ -1,21 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../../Layouts/Header/Header';
 import { db } from '../../libs/Firebase';
+import EducationCard from './Components/EducationCard';
 import WorkExperienceCard from './Components/WorkExperienceCard';
 
 function About() {
   const [work, setWork] = useState([]);
+  const [education, setEducation] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    db.collection('work').onSnapshot((snapshot) => {
-      setWork(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          data: doc.data(),
-        }))
-      );
-    });
+    db.collection('work')
+      .orderBy('endDate', 'desc')
+      .onSnapshot((snapshot) => {
+        setWork(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        );
+      });
+
+    db.collection('education')
+      .orderBy('endDate', 'desc')
+      .onSnapshot((snapshot) => {
+        setEducation(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        );
+      });
 
     setIsLoaded(true);
   }, []);
@@ -23,11 +38,28 @@ function About() {
   return (
     <>
       <Header />
-      <div className="mt-24 mx-24">
-        {isLoaded &&
-          work.map(({ id, data }) => (
-            <WorkExperienceCard key={id} work={data} />
-          ))}
+      <div className="mt-24 md:mx-24 mx-6">
+        <div>
+          <h1 className="text-4xl font-semibold text-center md:text-left ">
+            Work Experience
+          </h1>
+          <div>
+            {isLoaded &&
+              work.map(({ id, data }) => (
+                <WorkExperienceCard key={id} work={data} />
+              ))}
+          </div>
+        </div>
+
+        <div>
+          <h1 className="text-4xl font-semibold text-center md:text-left mt-12">
+            Education
+          </h1>
+          {isLoaded &&
+            education.map(({ id, data }) => (
+              <EducationCard key={id} education={data} />
+            ))}
+        </div>
       </div>
     </>
   );

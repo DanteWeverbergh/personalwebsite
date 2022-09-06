@@ -7,3 +7,13 @@ export async function getCol(col) {
     //
   });
 }
+
+export function getDate(firestoreDate, setDate) {
+  const date = new Intl.DateTimeFormat('de-De', {
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+  }).format(firestoreDate.toDate());
+
+  setDate(date);
+}
