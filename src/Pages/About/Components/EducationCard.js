@@ -20,7 +20,7 @@ function EducationCard({ education }) {
 
   return (
     <>
-      <div className="flex items-center  w-1/2 py-2 mt-6 ">
+      <div className="flex items-center   py-2 mt-6 w-full">
         <MdSchool className="text-6xl" />
         <div className="ml-6">
           <h1 className="text-xl font-bold">{education.degree}</h1>
