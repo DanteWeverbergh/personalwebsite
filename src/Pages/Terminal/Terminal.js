@@ -30,11 +30,14 @@ function Terminal() {
           </div>
           {/**Terminal */}
 
-          <div className="text-green-950 m-4">
+          <div className="text-green-950 m-4 text-2xl">
+            <h1>
+              danteweverbergh.com ~ % Type help for an overview of commands.
+            </h1>
             <input
               id="input"
               placeholder=""
-              className="bg-black outline-none text-3xl"
+              className="bg-black outline-none text-2xl"
             />
           </div>
         </div>
