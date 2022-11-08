@@ -7,6 +7,7 @@ module.exports = {
         slate: {
           950: '#0D1017',
           960: '#2e333a',
+          970: '#0e1016',
         },
         blue: {
           950: '#206FEB',
@@ -24,6 +25,13 @@ module.exports = {
         },
         grey: {
           950: '#C9D1D9',
+          960: '#b1bac4',
+        },
+        orange: {
+          950: '#b05b2d',
+        },
+        yellow: {
+          950: '#966c23',
         },
       },
     },

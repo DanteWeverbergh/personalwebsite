@@ -5,6 +5,7 @@ import Dashboard from '../Pages/Admin/Dashboard';
 import Contact from '../Pages/Contact/Contact';
 import Home from '../Pages/Home/Home';
 import Projects from '../Pages/Projects/Projects';
+import Terminal from '../Pages/Terminal/Terminal';
 
 function MainRouting() {
   return (
@@ -26,6 +27,8 @@ function MainRouting() {
 
           {/* Admin routes */}
           <Route path="/admin" element={<Dashboard />} />
+
+          <Route path="/terminal" element={<Terminal />} />
         </Routes>
       </div>
     </>
