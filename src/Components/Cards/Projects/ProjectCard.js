@@ -21,7 +21,7 @@ function ProjectCard() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
-            <div className="bg-blue-950 left-6 md:bg-slate-950 bottom-6 px-4 py-2 rounded-lg absolute  hover:bg-white-950 hover:text-slate-950">
+            <div className="bg-blue-950  md:bg-slate-950 bottom-0 px-4 py-2 rounded-lg absolute mb-6 md:mb-0 hover:bg-white-950 hover:text-slate-950">
               Read more
             </div>
           </div>
