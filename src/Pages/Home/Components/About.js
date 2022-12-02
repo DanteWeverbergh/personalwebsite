@@ -1,6 +1,19 @@
-import React from 'react';
+import { dblClick } from '@testing-library/user-event/dist/click';
+import React, { useEffect, useState } from 'react';
+import { db } from '../../../libs/Firebase';
+import * as FontAwsome from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io';
 
 function About() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const skills = [
+    { name: 'HTML', icon: <FontAwsome.FaHtml5 /> },
+    { name: 'CSS', icon: <FontAwsome.FaCss3Alt /> },
+    { name: 'Javescript', icon: <IoLogoJavascript /> },
+    { name: 'React', icon: <FontAwsome.FaReact /> },
+  ];
+
   return (
     <>
       <div className="relative ">
@@ -17,13 +30,19 @@ function About() {
           ></path>
         </svg>
         <div className="h-screen flex justify-center items-center mx-12 md:mx-0 ">
-          <div>
-            <h1 className="font-bold text-3xl mb-4">Who am I?</h1>
-            <p>
-              I'm Dante Weverbergh, a software developer with a bachelor degree
-              in Graphic and digital media at the Artevelde university of
-              applied sciences.
-            </p>
+          <div className="md:w-1/2 relative">
+            <h1 className="font-bold text-3xl z-20 absolute right-0 top-0">
+              Skills
+            </h1>
+            <div className="mt-12">
+              <ul className="bg-blue-950 py-4 px-4 flex flex-col gap-4 rounded-lg">
+                {skills.map((skill) => (
+                  <li className="flex text-4xl gap-6 text-slate-950">
+                    {skill.icon} <h2 className=" text-xl">{skill.name}</h2>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

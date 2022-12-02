@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 
 function ProjectCard() {
+  useEffect(() => {
+    //
+  }, []);
+
   return (
     <>
       <div className="relative md:w-96 bg-slate-950 p-6 md:p-0 md:bg-blue-950 rounded-lg ">
