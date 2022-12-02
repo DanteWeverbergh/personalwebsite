@@ -97,7 +97,7 @@ function Contact() {
 
                 <button
                   type="submit"
-                  className="bg-white-950 text-slate-950 px-4 py-2 rounded-lg w-full mt-6"
+                  className="bg-white-950 text-slate-950 px-4 py-2 rounded-lg w-full mt-6 hover:bg-slate-950 hover:text-white-950"
                 >
                   Send
                 </button>
