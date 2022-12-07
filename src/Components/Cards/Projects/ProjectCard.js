@@ -33,7 +33,9 @@ function ProjectCard({ project }) {
             <p className="mb-2">{project.description}</p>
             <div className="flex gap-2 ">
               {project.tags.map((tag) => (
-                <h3 className="bg-slate-950 rounded-lg px-2 py-1">{tag}</h3>
+                <h3 className="bg-blue-950 md:bg-slate-950 rounded-lg px-2 py-1">
+                  {tag}
+                </h3>
               ))}
             </div>
           </div>
