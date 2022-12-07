@@ -12,6 +12,7 @@ function About() {
     { name: 'CSS', icon: <FontAwsome.FaCss3Alt /> },
     { name: 'Javescript', icon: <IoLogoJavascript /> },
     { name: 'React', icon: <FontAwsome.FaReact /> },
+    { name: 'Laravel', icon: <FontAwsome.FaLaravel /> },
   ];
 
   return (
@@ -30,7 +31,7 @@ function About() {
           ></path>
         </svg>
         <div className="h-screen flex justify-center items-center mx-12 md:mx-0 ">
-          <div className="md:w-1/2 relative">
+          <div className="md:w-1/2 w-10/12 relative">
             <h1 className="font-bold text-3xl z-20 absolute right-0 top-0">
               Skills
             </h1>
