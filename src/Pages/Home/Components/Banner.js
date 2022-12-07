@@ -3,11 +3,16 @@ import ReactTypingEffect from 'react-typing-effect';
 import { MorphTransition } from 'react-svg-morph';
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 
 function Banner() {
   return (
     <>
       <div className="md:flex h-screen">
+        <div>
+          <BsFillArrowDownCircleFill className="animate-bounce absolute  bottom-5 left-1/2 transform -translate-x-1/2  text-4xl" />
+        </div>
+
         <div className="md:w-1/2 h-1/4  flex items-center justify-center md:h-screen">
           {/* <svg
             className="absolute z-10"
