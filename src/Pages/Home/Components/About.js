@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { db } from '../../../libs/Firebase';
 import * as FontAwsome from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
+import { SiTailwindcss } from 'react-icons/si';
 
 function About() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -13,6 +14,7 @@ function About() {
     { name: 'Javescript', icon: <IoLogoJavascript /> },
     { name: 'React', icon: <FontAwsome.FaReact /> },
     { name: 'Laravel', icon: <FontAwsome.FaLaravel /> },
+    { name: 'Tailwind css', icon: <SiTailwindcss /> },
   ];
 
   return (

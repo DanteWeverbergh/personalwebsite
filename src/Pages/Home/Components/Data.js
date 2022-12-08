@@ -2,16 +2,16 @@ export const projects = [
   {
     title: 'Gains - mobile fitness app',
     description:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      'Gains is a fitness app. Where we can track workouts, share our workout routines with other. Chat with your gymbuddies and share your performances at the gym on the social media page.',
     img: '/img/projects/gains_mockup_transparant.png',
     tags: ['React', 'mobile'],
     github: 'https://github.com/DanteWeverbergh/BAP_2022',
-    url: 'bap-2022-sfuv3.ondigitalocean.app',
+    url: 'https://bap-2022-sfuv3.ondigitalocean.app',
   },
   {
     title: 'Custom cms website',
     description:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      'A custom CMS website for a futsal club. With a blog and a webshop. When you log in to the dashboard you can add,edit or remove blogpost aswell as add, edit and remove items from the webshop.',
     img: '/img/projects/gains_mockup_transparant.png',
     tags: ['Laravel', 'responsive'],
     github: 'https://github.com/DanteWeverbergh/DeScheveScherpschutters',
@@ -19,8 +19,9 @@ export const projects = [
   {
     title: 'Photograpy portfolio',
     description:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      'Work in progress - In my free time I like to do some photography. And I made this portfolio where I can showcase my work, share photos with clients without depending on 3th patry solutions. ',
     img: '/img/projects/photography_portfolio.png',
     tags: ['React', 'responsive'],
+    github: 'https://github.com/DanteWeverbergh/foto_portfolio',
   },
 ];
