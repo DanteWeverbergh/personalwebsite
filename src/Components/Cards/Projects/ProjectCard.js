@@ -12,14 +12,14 @@ function ProjectCard({ project }) {
   return (
     <>
       <div className="relative md:w-96 bg-slate-950 p-6 md:p-0 md:bg-blue-950 rounded-lg ">
-        <div className="relative cursor-pointer" ref={ref}>
+        <div className="relative cursor-pointer group" ref={ref}>
           <img
             src={project.img ? project.img : 'https://picsum.photos/200/300'}
             className="w-96 h-56 object-cover rounded-lg"
             id="image"
           />
           <h1
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-md bg-slate-950 px-4 py-2 rounded-lg "
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-md bg-slate-950 px-4 py-2 rounded-lg hidden group-hover:block"
             id="image_click"
           >
             Click to visit website.
