@@ -11,10 +11,11 @@ export const projects = [
   {
     title: 'Custom cms website',
     description:
-      'A custom CMS website for a futsal club. With a blog and a webshop. When you log in to the dashboard you can add,edit or remove blogpost aswell as add, edit and remove items from the webshop.',
-    img: '/img/projects/gains_mockup_transparant.png',
-    tags: ['Laravel', 'responsive'],
-    github: 'https://github.com/DanteWeverbergh/DeScheveScherpschutters',
+      'A 3D world where you can interact with. There is a little game inside the world. If you click on the right present it gives you a personalized message. 3d world is made in Blender.',
+    img: '/img/projects/diorama_mockup.png',
+    tags: ['React', 'Thee.js', 'blender'],
+    github: 'https://github.com/gdmgent-2122-xr/diorama-DanteWeverbergh',
+    url: 'https://gdmgent-2122-xr.github.io/home',
   },
   {
     title: 'Photograpy portfolio',

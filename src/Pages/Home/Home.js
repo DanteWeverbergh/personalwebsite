@@ -10,7 +10,8 @@ import Projects from './Components/Projects';
 function Home() {
   return (
     <>
-      <Header />
+      {/*<Header />
+       */}
 
       <Banner />
 
