@@ -1,3 +1,3 @@
 Personal website
 
-www.danteweverbergh.com
+https://portfolio-danteweverbergh.vercel.app
