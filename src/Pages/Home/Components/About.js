@@ -12,6 +12,7 @@ function About() {
     { name: 'HTML', icon: <FontAwsome.FaHtml5 /> },
     { name: 'CSS', icon: <FontAwsome.FaCss3Alt /> },
     { name: 'Javescript', icon: <IoLogoJavascript /> },
+    { name: 'Nodejs', icon: <FontAwsome.FaNodeJs /> },
     { name: 'React', icon: <FontAwsome.FaReact /> },
     { name: 'Laravel', icon: <FontAwsome.FaLaravel /> },
     { name: 'Tailwind css', icon: <SiTailwindcss /> },

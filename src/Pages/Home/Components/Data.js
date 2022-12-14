@@ -9,11 +9,11 @@ export const projects = [
     url: 'https://bap-2022-sfuv3.ondigitalocean.app',
   },
   {
-    title: 'Custom cms website',
+    title: 'Interactive 3D world',
     description:
       'A 3D world where you can interact with. There is a little game inside the world. If you click on the right present it gives you a personalized message. 3d world is made in Blender.',
     img: '/img/projects/diorama_mockup.png',
-    tags: ['React', 'Thee.js', 'blender'],
+    tags: ['React', 'Three.js', 'blender'],
     github: 'https://github.com/gdmgent-2122-xr/diorama-DanteWeverbergh',
     url: 'https://gdmgent-2122-xr.github.io/home',
   },
