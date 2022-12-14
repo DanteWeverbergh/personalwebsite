@@ -46,8 +46,8 @@ function ProjectCard({ project }) {
             </div>
           </div>
           <a href={project.github} target="_blank" rel="noreferrer">
-            <div className="absolute right-0 bottom-0 color-slate-950">
-              <FaGithubSquare className="text-3xl text-slate-950 hover:text-white-950" />
+            <div className="absolute md:right-0 md:bottom-0 bottom-6 right-6 color-slate-950">
+              <FaGithubSquare className="text-3xl text-white-950 md:text-slate-950  hover:text-slate-950 md:hover:text-white-950" />
             </div>
           </a>
         </div>

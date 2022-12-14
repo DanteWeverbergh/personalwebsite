@@ -33,16 +33,19 @@ function About() {
             stroke-linejoin="miter"
           ></path>
         </svg>
-        <div className="h-screen flex justify-center items-center mx-12 md:mx-0 ">
-          <div className="md:w-1/2 w-10/12 relative">
+        <div className=" flex justify-center items-center mx-12 md:mx-0 ">
+          <div className="mt-64 md:w-1/2 w-10/12 relative">
             <h1 className="font-bold text-3xl z-20 absolute right-0 top-0">
               Skills
             </h1>
             <div className="mt-12">
               <ul className="bg-blue-950 py-4 px-4 flex flex-col gap-4 rounded-lg">
                 {skills.map((skill) => (
-                  <li className="flex text-4xl gap-6 text-slate-950">
-                    {skill.icon} <h2 className=" text-xl">{skill.name}</h2>
+                  <li className="flex text-5xl  gap-6 text-slate-950">
+                    <div className=" w-16 flex items-center justify-center">
+                      {skill.icon}{' '}
+                    </div>
+                    <h2 className=" text-xl font-bold">{skill.name}</h2>
                   </li>
                 ))}
               </ul>

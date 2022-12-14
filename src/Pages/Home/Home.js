@@ -5,6 +5,7 @@ import Header from '../../Layouts/Header/Header';
 import About from './Components/About';
 import Banner from './Components/Banner';
 import Contact from './Components/Contact';
+import Experience from './Components/Experience';
 import Projects from './Components/Projects';
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
 
       <Projects />
       <About />
+      <Experience />
       <Contact />
 
       <Footer />
