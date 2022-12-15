@@ -21,11 +21,11 @@ function Banner() {
         ></path>
       </svg>
 
-      <div className="md:flex h-screen">
-        <div>
-          <BsFillArrowDownCircleFill className="animate-bounce absolute  bottom-5 left-1/2 transform -translate-x-1/2  text-4xl" />
-        </div>
+      <div>
+        <BsFillArrowDownCircleFill className="animate-bounce absolute  bottom-6 right-6  text-blue-950 text-4xl" />
+      </div>
 
+      <div className="md:flex h-screen">
         <div className="md:w-1/2 h-1/4  flex items-center justify-center md:h-screen">
           {/* <svg
             className="absolute z-10"

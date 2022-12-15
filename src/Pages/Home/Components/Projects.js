@@ -7,13 +7,21 @@ import { projects } from './Data';
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
+import DesktopProject from '../../../Components/Cards/Projects/DesktopProject';
 
 function Projects() {
   return (
     <>
-      <div className="md:flex md:justify-around h-screen hidden  bg-blue-950 items-center ">
-        {projects.map((project) => (
+      <div className="md:flex md:justify-evenly  h-screen hidden   bg-blue-950 items-center ">
+        {/**
+ * 
+ * {projects.map((project) => (
           <ProjectCard project={project} />
+        ))}
+ */}
+
+        {projects.map((project) => (
+          <DesktopProject project={project} />
         ))}
       </div>
 
