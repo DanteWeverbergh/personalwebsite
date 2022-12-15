@@ -81,15 +81,15 @@ function Banner() {
                 target={'_blank'}
                 rel="noreferrer"
               >
-                <FaLinkedin className="hover:text-blue-950" />
+                <FaLinkedin className=" hover:animate-ping" />
               </a>
 
               <a
-                href="https://github.com/DanteWeverbergh"
+                href="https://github.com/DanteWeverbergh?tab=repositories"
                 target={'_blank'}
                 rel="noreferrer"
               >
-                <FaGithubSquare className="ml-2 hover:text-blue-950" />
+                <FaGithubSquare className="ml-2 hover:animate-ping" />
               </a>
             </div>
           </div>
