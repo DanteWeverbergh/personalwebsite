@@ -18,11 +18,12 @@ export const projects = [
     url: 'https://gdmgent-2122-xr.github.io/home',
   },
   {
-    title: 'Photograpy portfolio',
+    title: 'Muovo jobboard',
     description:
-      'Work in progress - In my free time I like to do some photography. And I made this portfolio where I can showcase my work, share photos with clients without depending on 3th patry solutions. ',
-    img: '/img/projects/photography_portfolio.png',
-    tags: ['React', 'responsive'],
-    github: 'https://github.com/DanteWeverbergh/foto_portfolio',
+      'Intership project. Full-stack job board with dashboard where user can see applications. Where companies can buy packages, host job, see applicant details. ',
+    img: '/img/projects/muovo_mockup.png',
+    tags: ['Next.js', 'Wordpress REST API', 'responsive'],
+    github: 'https://github.com/DanteWeverbergh/muovo_jobboard',
+    url: 'https://h5fqsxxo9tya83z8hy4yqnn51.js.wpenginepowered.com',
   },
 ];
